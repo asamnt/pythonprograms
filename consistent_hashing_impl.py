@@ -65,6 +65,7 @@ class ConsistentHash:
     def __repr__(self):
         return str(self)
 
+    #need to understand what is happening here
     def add_node(self, node: StorageNode) -> int:
         if len(self._keys) == self.total_slots:
             raise Exception("hash space is full")
